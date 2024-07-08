@@ -1,0 +1,378 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+/*CSS for links*/
+a:link{
+  color: pink;
+}
+a:visited{
+  color: #f9c3f9;
+}
+a:hover{
+  color: #689df2;
+}
+a:active{
+  color: green;
+}
+
+.article-container a:link{
+  color: pink;
+}
+.article-container a:visited{
+  color: purple;
+}
+.article-container a:hover{
+  color: red;
+}
+.article-container a:active{
+  color: green;
+}
+
+.navbar{
+  display: flex;
+  justify-content: center;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+/* Style rule set for hovered link */
+.navbar ul li a:hover {
+    font-weight: bold;
+}
+
+.header-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  align-items: center;
+}
+
+
+.image-container {
+  display: flex;
+}
+.image-container img {
+  width: calc(33.33% - 20px); 
+  text-align: center;
+  margin: 10px; 
+}
+
+
+header{
+  background-color: #036;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  font-family: sans-serif;
+}
+h1{
+  margin-top: 30px;
+  margin-left: 20px;
+}
+h2{
+  margin-left: 20px;
+}
+.overviewContent p{
+  margin-left: 30px;
+}
+ 
+
+header h1{
+  font-size: 40px;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 15px;
+}
+
+.image-details {
+  width: calc(33.33% - 20px); 
+  text-align: center;
+  margin: 10px; 
+}
+
+.image-details h3,
+.image-details p {
+  margin: 5px 0; 
+}
+
+.image-names-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  
+}
+.image-names-container p{
+  width: calc(33.33% - 20px);
+  text-align: center;
+  margin: 0 10px;
+}
+
+.article-details {
+  width: 100%;
+  text-align: center;
+  margin: 10px;
+}
+
+.article-details a{
+  color: blue;
+}
+
+.article-details {
+  margin-top: 10px;
+}
+
+.article-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.article {
+  width: calc(33.33% - 20px);
+  text-align: center;
+  margin: 10px;
+}
+
+.article img {
+  width: 100%;
+}
+
+
+.article-details h3,
+.article-details p {
+  margin: 5px 10px;
+}
+
+.Organizations{
+  text-align: center;
+  
+}
+.Organizations h2{
+  margin-bottom: 20px;
+}
+.Organizations ul {
+  padding: 0;
+  margin-bottom: 30px;
+}
+.Organizations li{
+  margin-bottom: 10px;
+}
+
+
+/* Add style to button */
+#theme-button {
+  text-decoration: none;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background-color: #458cd9;
+  padding: 10px 30px; 
+  border: 2px solid #458cd9;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#theme-button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Customize Dark Mode Theme */
+.dark-mode {
+  background-color: black;
+  color: white;
+
+
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end; /
+}
+
+#toggle-dark-mode {
+  margin-left: auto;
+}
+.petition{
+  background-color: #036;
+  color: #fff;
+  padding: 20px;
+}
+.petition h2 {
+  padding-top: 50px;
+  margin-left: 50px; 
+}
+.petition h2:hover {
+  font-size: 1.8em; 
+}
+
+.petition-container{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100;
+  padding-left: 50px;
+  padding-bottom: 100px;
+}
+.petition-text{
+  width: 55%;
+  padding-right: 10px;
+}
+.signatures{
+  flex-grow: 1;
+  width: 45%;
+  padding-right: 10px;
+}
+#sign-petition{
+  padding-left: 50px;
+  padding-bottom: 25px;
+
+}
+#counter{
+  padding-left: 35px;
+  padding-bottom: 100px;
+}
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background:pink;
+}
+
+/* Update the transition properties for .revealable */
+.revealable {
+  position: relative;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.revealable.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #333;
+  border-radius: 10px;
+}
+
+.modal-content {
+  background-color: lightsteelblue;
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* CSS for animation */
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.celebration-animation {
+  animation-name: zoomIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+#thanks-modal-content {
+  width: 20rem;
+}
+
+#modal-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Close button style */
+#close-modal-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #458cd9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#close-modal-button:hover {
+  background-color: #0056b3;
+}
+
+.animated-heading {
+  animation-name: slideAnimation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slideAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; 
+}
+
+#back-to-top img {
+  width: 40px; 
+  height: 40px; 
+  cursor: pointer;
+}
+
+#back-to-top::before {
+  content: '';
+  position: absolute;
+  bottom: -4px; 
+  right: -4px; 
+  width: 48px; 
+  height: 48px; 
+  background-color: black;
+  border-radius: 50%;
+  z-index: -1; 
+}
+
+
